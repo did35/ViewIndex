@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "animalName": "Lion",
+        "url": "https://en.wikipedia.org/wiki/Lion"
+    },
+    {
+        "id": 2,
+        "animalName": "Zebra",
+        "url": "https://en.wikipedia.org/wiki/Zebra"
+    },
+    {
+        "id": 3,
+        "animalName": "Rhino",
+        "url": "https://en.wikipedia.org/wiki/Rhinoceros"
+    },
+    {
+        "id": 4,
+        "animalName": "",
+        "url": ""
+    }
+]
