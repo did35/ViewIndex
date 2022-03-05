@@ -36,7 +36,8 @@ struct DetailView: View {
         }
     }
     
-    // Refactored in the ViewIndexViewModel if necessary.
+    // MARK: - Function
+    // Refactor in the ViewIndexViewModel if necessary.
     func checkIndex() {
         let numAnimals = vm.animals.count
         if animalID == numAnimals {
