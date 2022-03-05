@@ -12,7 +12,7 @@
 		631CE0B527D220C000077C7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631CE0B427D220C000077C7B /* Assets.xcassets */; };
 		631CE0B827D220C000077C7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631CE0B727D220C000077C7B /* Preview Assets.xcassets */; };
 		631CE0C427D2216800077C7B /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631CE0C327D2216800077C7B /* Bundle.swift */; };
-		631CE0C627D2219300077C7B /* ViewIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631CE0C527D2219300077C7B /* ViewIndexViewModel.swift */; };
+		631CE0C627D2219300077C7B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631CE0C527D2219300077C7B /* DetailViewModel.swift */; };
 		631CE0C827D221C800077C7B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631CE0C727D221C800077C7B /* DataModel.swift */; };
 		631CE0CA27D222F700077C7B /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 631CE0C927D222F700077C7B /* animals.json */; };
 		631CE0CC27D2260700077C7B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631CE0CB27D2260700077C7B /* DetailView.swift */; };
@@ -25,7 +25,7 @@
 		631CE0B427D220C000077C7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631CE0B727D220C000077C7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		631CE0C327D2216800077C7B /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
-		631CE0C527D2219300077C7B /* ViewIndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIndexViewModel.swift; sourceTree = "<group>"; };
+		631CE0C527D2219300077C7B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		631CE0C727D221C800077C7B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		631CE0C927D222F700077C7B /* animals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
 		631CE0CB27D2260700077C7B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				631CE0C127D2211400077C7B /* Helper */,
 				631CE0C027D2210B00077C7B /* Data */,
 				631CE0BF27D2210300077C7B /* Model */,
-				631CE0BE27D220F900077C7B /* View */,
+				631CE0BE27D220F900077C7B /* Views */,
 				631CE0C227D2211F00077C7B /* ViewModel */,
 				631CE0B427D220C000077C7B /* Assets.xcassets */,
 				631CE0B627D220C000077C7B /* Preview Content */,
@@ -81,13 +81,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		631CE0BE27D220F900077C7B /* View */ = {
+		631CE0BE27D220F900077C7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				631CE0B227D220BF00077C7B /* ContentView.swift */,
 				631CE0CB27D2260700077C7B /* DetailView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		631CE0BF27D2210300077C7B /* Model */ = {
@@ -117,7 +117,7 @@
 		631CE0C227D2211F00077C7B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				631CE0C527D2219300077C7B /* ViewIndexViewModel.swift */,
+				631CE0C527D2219300077C7B /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 				631CE0CC27D2260700077C7B /* DetailView.swift in Sources */,
 				631CE0B327D220BF00077C7B /* ContentView.swift in Sources */,
 				631CE0C427D2216800077C7B /* Bundle.swift in Sources */,
-				631CE0C627D2219300077C7B /* ViewIndexViewModel.swift in Sources */,
+				631CE0C627D2219300077C7B /* DetailViewModel.swift in Sources */,
 				631CE0B127D220BF00077C7B /* ViewIndexApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

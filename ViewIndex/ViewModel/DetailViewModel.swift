@@ -7,7 +7,6 @@
 
 import Foundation
 
-class ViewIndexViewModel: ObservableObject {
+class DetailViewModel: ObservableObject {
     @Published var animals: [DataModel] = Bundle.main.decode("animals.json")
-    
 }

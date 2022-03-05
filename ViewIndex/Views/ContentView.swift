@@ -9,16 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     // MARK: - Properties
-    @StateObject var vm = ViewIndexViewModel()
+    @StateObject var vm = DetailViewModel()
     
     // MARK: - Body
     var body: some View {
         NavigationView {
-            List {
-                ForEach(vm.animals) { animal in
-                    NavigationLink(destination: DetailView(animalID: animal.id, vm: ViewIndexViewModel())) {
-                        Text(animal.animalName)
-                    }
+            List(vm.animals) { animal in
+                NavigationLink(destination: DetailView(animalID: animal.id, vm: vm)) {
+                    Text(animal.animalName)
                 }
             }
             .listStyle(.plain)

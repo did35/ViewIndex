@@ -10,11 +10,13 @@ import SwiftUI
 struct DetailView: View {
     // MARK: - Properties
     @State var animalID: DataModel.ID
-    @ObservedObject var vm: ViewIndexViewModel
+    @ObservedObject var vm: DetailViewModel
     
     // MARK: - Body
     var body: some View {
         VStack {
+            // View will be updated when @State changes
+            // In here, the view is just a Text but you can put more complex views...
             Text(vm.animals[animalID - 1].animalName)
                 .font(.largeTitle)
                 .padding()
@@ -37,7 +39,6 @@ struct DetailView: View {
     }
     
     // MARK: - Function
-    // Refactor in the ViewIndexViewModel if necessary.
     func checkIndex() {
         let numAnimals = vm.animals.count
         if animalID == numAnimals {
@@ -51,6 +52,6 @@ struct DetailView: View {
 // MARK: - Preview
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(animalID: 1, vm: ViewIndexViewModel())
+        DetailView(animalID: 1, vm: DetailViewModel())
     }
 }
