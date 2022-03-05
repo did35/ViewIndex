@@ -15,12 +15,12 @@ struct DetailView: View {
     // MARK: - Body
     var body: some View {
         VStack {
+            Spacer()
             // View will be updated when @State changes
             // In here, the view is just a Text but you can put more complex views...
             Text(vm.animals[animalID - 1].animalName)
                 .font(.largeTitle)
                 .padding()
-            
             Spacer()
             Button {
                 checkIndex()
@@ -34,7 +34,7 @@ struct DetailView: View {
                     }
                 }
             }
-            Spacer()
+            .padding(.bottom, 40)
         }
     }
     
