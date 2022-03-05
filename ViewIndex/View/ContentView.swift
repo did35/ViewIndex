@@ -16,7 +16,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(vm.animals) { animal in
-                    NavigationLink(destination: DetailView(animalID: animal.id, vm: vm)) {
+                    NavigationLink(destination: DetailView(animalID: animal.id, vm: ViewIndexViewModel())) {
                         Text(animal.animalName)
                     }
                 }

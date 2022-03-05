@@ -18,17 +18,31 @@ struct DetailView: View {
             Text(vm.animals[animalID - 1].animalName)
                 .font(.largeTitle)
                 .padding()
+            
             Spacer()
             Button {
-                animalID += 1
+                checkIndex()
             } label: {
                 HStack {
                     Image(systemName: "arrowshape.turn.up.right")
-                    Text("Go to \(vm.animals[animalID].animalName)")
+                    if animalID == 4 {
+                        Text("Go to \(vm.animals[0].animalName)")
+                    } else {
+                        Text("Go to \(vm.animals[animalID].animalName)")
+                    }
                 }
             }
-            .disabled(animalID >= vm.animals.count - 1)
             Spacer()
+        }
+    }
+    
+    // Refactored in the ViewIndexViewModel if necessary.
+    func checkIndex() {
+        let numAnimals = vm.animals.count
+        if animalID == numAnimals {
+            animalID = 1
+        } else {
+            animalID += 1
         }
     }
 }
